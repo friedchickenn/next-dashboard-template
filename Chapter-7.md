@@ -122,7 +122,7 @@ export default async function Page() {
 ```
 
 Kemudian, uncomment komponen `<RevenueChart/>`, navigasikan ke file komponen (/app/ui/dashboard/revenue-chart.jsx) dan uncomment kode di dalamnya. Periksa localhost Anda, Anda seharusnya dapat melihat grafik yang menggunakan data pendapatan.
-![alt text](image-17.png)
+![alt text](gambar/image-17.png)
 
 ### Mengambil Data untuk `<LatestInvoices/>`
 
@@ -166,7 +166,7 @@ export default async function Page() {
 Kemudian, uncomment komponen `<LatestInvoices />`. Anda juga perlu uncomment kode yang relevan di dalam komponen `<LatestInvoices />` itu sendiri, yang terletak di /app/ui/dashboard/latest-invoices.
 
 Jika Anda mengunjungi localhost Anda, Anda seharusnya melihat bahwa hanya 5 faktur terakhir yang dikembalikan dari database. Semoga, Anda mulai melihat keuntungan dari mengkueri database Anda secara langsung!
-![alt text](image-18.png)
+![alt text](gambar/image-18.png)
 
 ### Latihan: Mengambil Data untuk Komponen `<Card>`
 
@@ -202,7 +202,7 @@ Petunjuk:
 Setelah Anda siap, perluas toggle di bawah untuk kode akhirnya:
 
 Bagus! Anda sekarang telah mengambil semua data untuk halaman ikhtisar dashboard. Halaman Anda harus terlihat seperti ini:
-![alt text](image-19.png)
+![alt text](gambar/image-19.png)
 Namun... ada dua hal yang perlu Anda sadari:
 
 1. Permintaan data secara tidak sengaja saling memblokir, menciptakan waterfall permintaan.
@@ -213,7 +213,7 @@ Mari kita bahas nomor 1 dalam bab ini, lalu lihat lebih detail pada nomor 2 di b
 ### Apa itu Request Waterfalls?
 
 "Waterfall" mengacu pada serangkaian permintaan jaringan yang bergantung pada penyelesaian permintaan sebelumnya. Dalam hal pengambilan data, setiap permintaan hanya dapat dimulai setelah permintaan sebelumnya mengembalikan data.
-![alt text](image-20.png)
+![alt text](gambar/image-20.png)
 Misalnya, kita perlu menunggu `fetchRevenue()` dieksekusi sebelum `fetchLatestInvoices()` dapat mulai berjalan, dan seterusnya.
 
 ```javascript

@@ -24,22 +24,22 @@ Kunjungi vercel.com/signup untuk membuat akun. Pilih rencana "hobi" gratis. Pili
 
 ### Menghubungkan dan Menyebarkan Proyek Anda
 Selanjutnya, Anda akan dibawa ke layar ini di mana Anda dapat memilih dan mengimpor repository GitHub yang baru saja Anda buat:
-![alt text](image-10.png)
+![alt text](gambar/image-10.png)
 Nama proyek Anda dan klik Deploy.
-![alt text](image-11.png)
+![alt text](gambar/image-11.png)
 Hore! 🎉 Proyek Anda sekarang disebarkan.
-![alt text](image-12.png)
+![alt text](gambar/image-12.png)
 Dengan menghubungkan repository GitHub Anda, setiap kali Anda mendorong perubahan ke cabang utama, Vercel akan secara otomatis menyebarkan ulang aplikasi Anda tanpa konfigurasi yang diperlukan. Saat membuka pull request, Anda juga akan memiliki pratinjau instan yang memungkinkan Anda menangkap kesalahan penyebaran lebih awal dan berbagi pratinjau proyek Anda dengan anggota tim untuk umpan balik.
 
 ### Membuat Database Postgres
 Selanjutnya, untuk mengatur database, klik Continue to Dashboard dan pilih tab Storage dari dashboard proyek Anda. Pilih Connect Store → Create New → Postgres → Continue.
-![alt text](image-13.png)
+![alt text](gambar/image-13.png)
 Terima syaratnya, beri nama database Anda, dan pastikan wilayah database Anda diatur ke Washington D.C (iad1) - ini juga merupakan wilayah default untuk semua proyek Vercel baru. Dengan menempatkan database Anda di wilayah yang sama atau dekat dengan kode aplikasi Anda, Anda dapat mengurangi latensi untuk permintaan data.
-![alt text](image-14.png)
+![alt text](gambar/image-14.png)
 Perlu diketahui: Anda tidak dapat mengubah wilayah database setelah diinisialisasi. Jika Anda ingin menggunakan wilayah yang berbeda, Anda harus mengaturnya sebelum membuat database.
 
 Setelah terhubung, navigasikan ke tab .env.local, klik Show secret dan Copy Snippet. Pastikan Anda mengungkapkan rahasia sebelum menyalinnya.
-![alt text](image-15.png)
+![alt text](gambar/image-15.png)
 Navigasikan ke editor kode Anda dan ganti nama file .env.example menjadi .env. Tempelkan isi yang disalin dari Vercel.
 
 Penting: Pergi ke file .gitignore Anda dan pastikan .env ada dalam file yang diabaikan untuk mencegah rahasia database Anda terungkap saat Anda mendorong ke GitHub.
@@ -65,7 +65,7 @@ Pastikan server pengembangan lokal Anda berjalan dengan `pnpm run dev` dan navig
 Mari kita lihat bagaimana tampilan database Anda. Kembali ke Vercel, dan klik Data di sidenav.
 
 Di bagian ini, Anda akan menemukan empat tabel baru: users, customers, invoices, dan revenue.
-![alt text](image-16.png)
+![alt text](gambar/image-16.png)
 Dengan memilih setiap tabel, Anda dapat melihat rekamannya dan memastikan entri sesuai dengan data dari file placeholder-data.ts.
 
 ### Menjalankan Kueri

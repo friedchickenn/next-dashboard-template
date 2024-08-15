@@ -22,7 +22,7 @@ export default function Page() {
           
           <Link
             href="/login"
-            className="flex items-center self-start gap-5 px-6 py-3 text-sm font-medium text-white transition-colors bg-yellow-500 rounded-lg hover:bg-blue-400 md:text-base"
+            className="flex items-center self-start gap-5 px-6 py-3 text-sm font-medium text-white transition-colors bg-yellow-500 rounded-lg hover:bg-yellow-400 md:text-base"
           >
             <span>Log in</span>
           </Link>
